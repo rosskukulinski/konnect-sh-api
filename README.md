@@ -11,6 +11,8 @@ Service Package markdown documentation & Service Version Open API Specs.
 You will need a [Personal Access Token](https://docs.konghq.com/konnect/runtime-manager/runtime-groups/declarative-config/#generate-a-personal-access-token), as well as the Service Package ID (e.g. `https://cloud.konghq.com/us/servicehub/5bdf66c1-02a9-4ef5-b32f-7791c0f59be0/overview` --> `5bdf66c1-02a9-4ef5-b32f-7791c0f59be0`) and 
 Service Version ID (e.g. `https://cloud.konghq.com/us/servicehub/5bdf66c1-02a9-4ef5-b32f-7791c0f59be0/versions/9fbeed10-6cf5-42b7-ad1f-6bbeed93d46b` --> `9fbeed10-6cf5-42b7-ad1f-6bbeed93d46b`).
 
+**IMPORTANT NOTE: These APIs are not official and will be deprecated & removed once we ship v2 Service Hub APIs**
+
 ## list_services.sh
 
 Gets the list of all the Service Packages you have access to
