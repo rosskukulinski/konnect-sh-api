@@ -48,3 +48,16 @@ Gets the API spec currently associated with a particular Service Version
 ## download_doc.sh
 Download the markdown document, to the defined Service Package
 
+## update_doc_auto.sh
+Update the markdown document using service.name to get needed ID
+Be care to get correct version id.
+
+## update_spec_auto.sh
+Update the openAPI specification file using service.name to get needed ID
+Be care to get correct version id.
+
+## publish_to_dev_portal.sh
+Publish service id to Dev Portal using service.name
+
+## unpublish_to_dev_portal.sh
+Unpublish service id to Dev Portal using service.name
