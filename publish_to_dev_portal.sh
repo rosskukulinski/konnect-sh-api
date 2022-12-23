@@ -10,7 +10,7 @@ SERVICE_ID=$(curl -s -H "Authorization: Bearer ${KONNECT_TOKEN}" -X GET https://
 echo -e "Successfully get service id ${SERVICE_ID} from service name ${SERVICE_NAME}\n"
 
 echo "Get pubished status"
-PORTALS=$(curl -s -H "Authorization: Bearer ${KONNECT_TOKEN}" -X GET https://eu.api.konghq.com/konnect-api/api/service_packages/${SERVICE_ID} | jq -r .portals) > /dev/null
+PORTALS=$(curl -s -H "Authorization: Bearer ${KONNECT_TOKEN}" -X GET https://us.api.konghq.com/konnect-api/api/service_packages/${SERVICE_ID} | jq -r .portals) > /dev/null
 echo -e "Successfully get published status\n"
 
 if [ ${PORTALS} == '[]' && ${PUBLISH_TO_DEV_PORTAL} == "yes" ]
