@@ -23,11 +23,11 @@ Gets the list of all the service versions associated with a particular Service P
 
 ## upload_doc.sh
 
-Uploads the markdown document, "Petstore.md" to the defined Service Package
+If exist, remove the documentation associated with a particular Service Package and then uploads the markdown document, "Petstore.md" to the defined Service Package
 
 ## upload_spec.sh
 
-Uploads the OpenAPI Spec, "Petstore_oas2.yaml" to the defined Service Version
+If exist, remove the OpenAPI specification associated with a particular service version and then uploads the OpenAPI Spec, "Petstore_oas2.yaml" to the defined Service Version
 
 ## delete_doc.sh
 
@@ -44,3 +44,20 @@ Gets the documentation currently associated with a particular Service Package
 ## list_spec.sh
 
 Gets the API spec currently associated with a particular Service Version
+
+## download_doc.sh
+Download the markdown document, to the defined Service Package
+
+## update_doc_auto.sh
+Update the markdown document using service.name to get needed ID
+Be care to get correct version id.
+
+## update_spec_auto.sh
+Update the openAPI specification file using service.name to get needed ID
+Be care to get correct version id.
+
+## publish_to_dev_portal.sh
+Publish service id to Dev Portal using service.name
+
+## unpublish_to_dev_portal.sh
+Unpublish service id to Dev Portal using service.name
