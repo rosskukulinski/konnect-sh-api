@@ -61,3 +61,6 @@ Publish service id to Dev Portal using service.name
 
 ## unpublish_to_dev_portal.sh
 Unpublish service id to Dev Portal using service.name
+
+## change_version_statius.sh
+Configure the Service Version status (Published or Unpublished) in the developer portal
