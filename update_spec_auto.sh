@@ -21,7 +21,7 @@ SPEC_DOCUMENT=$(cat ${SPEC_FILEPATH} | jq -sR .)
 if [ ${SPEC_DOCUMENT_ID} != null ]
 then
        echo "Deleting current document id: ${SPEC_DOCUMENT_ID}"
-       curl -s -H "Authorization: Bearer ${KONNECT_TOKEN}" -X DELETE https://us.api.konghq.com/konnect-api/api/service_versions/${SERVICE_VERSION_ID}/documents/${DOCUMENT_ID}
+       curl -s -H "Authorization: Bearer ${KONNECT_TOKEN}" -X DELETE https://us.api.konghq.com/konnect-api/api/service_versions/${SERVICE_VERSION_ID}/documents/${SPEC_DOCUMENT_ID}
        echo "Successfully deleted ${SPEC_DOCUMENT_ID} to Service version id ${SERVICE_VERSION_ID}\n"
 fi
 
